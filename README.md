@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+# 🔐 Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive password generator built with **React**, **Vite**, and **Tailwind CSS**. This app allows you to generate secure passwords with customizable options.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Features
 
-## Expanding the ESLint configuration
+- Generate passwords of custom length
+- Toggle inclusion of:
+  - Alphabets (A-Z, a-z)
+  - Numbers (0-9)
+  - Special characters (!@#$...)
+- Copy generated password to clipboard
+- Fully responsive and minimal UI
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Tech Stack
+
+- ⚛️ React (with hooks)
+- ⚡ Vite
+- 🎨 Tailwind CSS
+- ✅ Radix UI components (checkboxes)
+- ✨ ShadCN UI library
+- 📦 Lucide icons
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/password-generator.git
+cd password-generator
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+The app will open at `http://localhost:5173` (or similar) in your browser.
+
+---
+
+## 🛠 Project Structure
+
+```
+src/
+├── components/
+│   └── ui/       # ShadCN UI components (button, input, card, etc.)
+├── App.tsx       # Main app component
+├── main.tsx      # Entry point
+├── lib/
+│   └── utils.ts  # Utility functions (like `cn`)
+```
+
+---
+
+## 📸 Preview
+
+![App Screenshot](https://your-screenshot-url-if-any.com)
+
+---
+
+## 🙌 Credits
+
+- [React](https://reactjs.org)
+- [Radix UI](https://www.radix-ui.com/)
+- [Lucide Icons](https://lucide.dev)
+
+---
+
+## 📄 License
+
+MIT License. Feel free to use, modify, and share!
