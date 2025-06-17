@@ -66,12 +66,6 @@ src/
 
 ---
 
-## 📸 Preview
-
-![App Screenshot](https://your-screenshot-url-if-any.com)
-
----
-
 ## 🙌 Credits
 
 - [React](https://reactjs.org)
